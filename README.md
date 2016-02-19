@@ -22,18 +22,22 @@ If you try to run `casperjs --version` you'll be greeted with an error:
     
     /usr/local/lib/node_modules/casperjs/bin/bootstrap.js:91 in __die
     
-To fix, you need to modify the `bootstrap.js` file. Open the boostrap file in your favorite text editor. Under the following line:
+To fix, you need to modify the `bootstrap.js` file. Open the boostrap file in your favorite text editor. The location of the bootstrap file is:
+
+    /usr/local/lib/node_modules/casperjs/bin/bootstrap.js:91 in __die
+
+Find the following line:
 
     /*jshint maxstatements:34, maxcomplexity:10*/
 
-Paste:
+Underneath it paste the following code:
 
     var system = require('system');
     var argsdeprecated = system.args;
     argsdeprecated.shift();
     phantom.args = argsdeprecated;
     
-Next, find the following code:
+Next, find the following code in the same file:
 
     (function(version) {
         // required version check
@@ -69,8 +73,8 @@ Delete it, and replace it with the following:
     
 Save, and close the file. Now run: `casperjs --version` and your output should look similar to mine:
 
-  Jamess-iMac:Projects jamesjeffery$ casperjs --version
-  1.1.0-beta3
+   Jamess-iMac:Projects jamesjeffery$ casperjs --version
+   1.1.0-beta3
 
 
    
