@@ -6,7 +6,7 @@ Installing CasperJS 1.1.0-beta3 with PhantomJS 2.0 can be a pain in the backside
 Installing PhantomJS 2.0
 ------------------------
 
-    npm install phantomjs2
+    npm install -g phantomjs2
     
 Installing CasperJS 1.1.0-beta3
 -------------------------------
