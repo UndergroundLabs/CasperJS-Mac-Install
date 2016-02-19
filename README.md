@@ -24,7 +24,7 @@ If you try to run `casperjs --version` you'll be greeted with an error:
     
 To fix, you need to modify the `bootstrap.js` file. Open the boostrap file in your favorite text editor. The location of the bootstrap file is:
 
-    /usr/local/lib/node_modules/casperjs/bin/bootstrap.js:91 in __die
+    /usr/local/lib/node_modules/casperjs/bin/bootstrap.js
 
 Find the following line:
 
