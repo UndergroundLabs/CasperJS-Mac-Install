@@ -73,8 +73,5 @@ Delete it, and replace it with the following:
     
 Save, and close the file. Now run: `casperjs --version` and your output should look similar to mine:
 
-   Jamess-iMac:Projects jamesjeffery$ casperjs --version
-   1.1.0-beta3
-
-
-   
+    Jamess-iMac:Projects jamesjeffery$ casperjs --version
+    1.1.0-beta3
