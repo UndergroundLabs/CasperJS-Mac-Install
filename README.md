@@ -1,3 +1,5 @@
+Install CasperJS 1.1.0-beta3 and PhantomJS 2.0 on Mac OSX El Capitan
+====================================================================
 
 Installing CasperJS 1.1.0-beta3 with PhantomJS 2.0 can be a pain in the backside to get working. The solution is simple, but often difficult to find online. I've written this guide for myself, and thought it might be helpful to others.
 
